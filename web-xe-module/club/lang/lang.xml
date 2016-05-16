@@ -1,0 +1,327 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<lang>
+	<item name="cafe_welcome_title">
+		<value xml:lang="ko"><![CDATA[CafeXE 설치를 환영합니다.]]></value>
+	</item>
+	<item name="cafe">
+		<value xml:lang="ko"><![CDATA[동아리 카페]]></value>
+	</item>
+	<item name="cafe_management">
+		<value xml:lang="ko"><![CDATA[동아리 관리]]></value>
+	</item>
+	<item name="cafe_id">
+		<value xml:lang="ko"><![CDATA[동아리 카페 접속 ID]]></value>
+	</item>
+	<item name="cafe_title">
+		<value xml:lang="ko"><![CDATA[동아리 카페 이름]]></value>
+	</item>
+	<item name="club_type">
+		<value xml:lang="ko"><![CDATA[동아리 종류]]></value>
+	</item>
+	<item name="cafe_description">
+		<value xml:lang="ko"><![CDATA[동아리 설명]]></value>
+	</item>
+	<item name="cafe_banner">
+		<value xml:lang="ko"><![CDATA[동아리 카페 배너이미지]]></value>
+	</item>
+	<item name="cafe_list">
+		<value xml:lang="ko"><![CDATA[동아리 목록]]></value>
+	</item>
+	<item name="cafe_hub_skin">
+		<value xml:lang="ko"><![CDATA[동아리 허브 스킨]]></value>
+	</item>
+	<item name="module_type">
+		<value xml:lang="ko"><![CDATA[대상]]></value>
+	</item>
+	<item name="board">
+		<value xml:lang="ko"><![CDATA[게시판]]></value>
+	</item>
+	<item name="page">
+		<value xml:lang="ko"><![CDATA[페이지]]></value>
+	</item>
+	<item name="module_id">
+		<value xml:lang="ko"><![CDATA[모듈 ID]]></value>
+	</item>
+	<item name="item_group_grant">
+		<value xml:lang="ko"><![CDATA[보여줄 그룹]]></value>
+	</item>
+	<item name="cafe_info">
+		<value xml:lang="ko"><![CDATA[동아리 정보]]></value>
+	</item>
+	<item name="cafe_admin">
+		<value xml:lang="ko"><![CDATA[동아리 회장]]></value>
+	</item>
+	<item name="do_selected_member">
+		<value xml:lang="ko"><![CDATA[선택된 회원을 : ]]></value>
+	</item>
+	<item name="new_cafe">
+		<value xml:lang="ko"><![CDATA[생성된 동아리 카페]]></value>
+	</item>
+	<item name="cafe_latest_documents">
+		<value xml:lang="ko"><![CDATA[동아리 카페 최신 글]]></value>
+	</item>
+	<item name="cafe_latest_comments">
+		<value xml:lang="ko"><![CDATA[동아리 카페 최신 댓글]]></value>
+	</item>
+	<item name="cafe_signup_date">
+		<value xml:lang="ko"><![CDATA[동아리 가입일]]></value>
+	</item>
+	<item name="mycafe_list">
+		<value xml:lang="ko"><![CDATA[가입한 동아리]]></value>
+	</item>
+	<item name="cafe_creation_type">
+		<value xml:lang="ko"><![CDATA[동아리 카페 접속 방법]]></value>
+	</item>
+	<item name="about_cafe_creation_type">
+		<value xml:lang="ko"><![CDATA[학생들이 동아리 카페를 생성할때 동아리 카페 접속 방법을 정해야 합니다. Site ID는 http://기본주소/ID 로 접속 가능하고 Domain 접속은 입력하신 도메인의 2차 도메인(http://domain.mydomain.net) 으로 동아리 카페가 생성됩니다]]></value>
+	</item>
+	<item name="cafe_hub_layout">
+		<value xml:lang="ko"><![CDATA[동아리 허브 레이아웃]]></value>
+	</item>
+	<item name="hub_skin">
+		<value xml:lang="ko"><![CDATA[동아리 허브 스킨]]></value>
+	</item>
+	<item name="hub_mobile_skin">
+		<value xml:lang="ko"><![CDATA[동아리 허브 모바일 스킨]]></value>
+	</item>
+	<item name="hub_mobile_layout">
+		<value xml:lang="ko"><![CDATA[동아리 허브 모바일 레이아웃]]></value>
+	</item>
+	<item name="default_layout">
+		<value xml:lang="ko"><![CDATA[기본 레이아웃]]></value>
+	</item>
+	<item name="mark">
+		<value xml:lang="ko"><![CDATA[마크]]></value>
+	</item>
+	<item name="about_site_individual_configure">
+		<value xml:lang="ko"><![CDATA[* 아래는 동아리 카페 개별 설정 영역입니다. 이미 생성된 동아리 카페에는 반영되지 않습니다.]]></value>
+	</item>
+	<item name="about_default_layout">
+		<value xml:lang="ko"><![CDATA[동아리 카페가 생성될때 설정될 기본 레이아웃을 지정할 수 있습니다.]]></value>
+	</item>
+	<item name="about_default_mlayout">
+		<value xml:lang="ko"><![CDATA[동아리 카페가 생성될때 설정될 모바일 레이아웃을 지정할 수 있습니다.]]></value>
+	</item>
+	<item name="enable_change_layout">
+		<value xml:lang="ko"><![CDATA[레이아웃 변경]]></value>
+	</item>
+	<item name="about_change_layout">
+		<value xml:lang="ko"><![CDATA[선택하시면 개별 동아리 카페에서 레이아웃 변경을 허용할 수 있습니다]]></value>
+	</item>
+	<item name="allow_service">
+		<value xml:lang="ko"><![CDATA[허용 서비스]]></value>
+	</item>
+	<item name="about_allow_service">
+		<value xml:lang="ko"><![CDATA[개별 동아리 카페에서 사용할 기본 서비스를 설정할 수 있습니다]]></value>
+	</item>
+	<item name="cmd_more">
+		<value xml:lang="ko"><![CDATA[더 보기]]></value>
+	</item>
+	<item name="cmd_make_cafe">
+		<value xml:lang="ko"><![CDATA[동아리 생성]]></value>
+	</item>
+	<item name="cmd_import">
+		<value xml:lang="ko"><![CDATA[가져오기]]></value>
+	</item>
+	<item name="cmd_export">
+		<value xml:lang="ko"><![CDATA[내보내기]]></value>
+	</item>
+	<item name="cafe_creation_privilege">
+		<value xml:lang="ko"><![CDATA[동아리 카페 생성 권한]]></value>
+	</item>
+	<item name="cafe_main_mid">
+		<value xml:lang="ko"><![CDATA[동아리 허브 ID]]></value>
+	</item>
+	<item name="about_cafe_main_mid">
+		<value xml:lang="ko"><![CDATA[동아리 허브 페이지를 http://주소/ID 값으로 접속하기 위한 ID값을 입력해주세요.<br /> 동아리 허브 페이지에서는 생성된 동아리 목록, 글목록 등을 조회할 수 있고 학생 사용자들의 동아리 생성을 도와줍니다.]]></value>
+	</item>
+	<item name="about_cafe_hub_layout">
+		<value xml:lang="ko"><![CDATA[동아리 허브의 레이아웃을 지정합니다. <br />
+		XE Cafe 공식 레이아웃은 xe_cafe_hub, xe_cafe 입니다.
+		]]></value>
+	</item>
+	<item name="default_menus" type="array">
+		<item name="home">
+			<value xml:lang="ko"><![CDATA[홈]]></value>
+		</item>
+		<item name="notice">
+			<value xml:lang="ko"><![CDATA[공지사항]]></value>
+		</item>
+		<item name="freeboard">
+			<value xml:lang="ko"><![CDATA[자유게시판]]></value>
+		</item>
+		<item name="view_total">
+			<value xml:lang="ko"><![CDATA[전체 글 보기]]></value>
+		</item>
+		<item name="view_comment">
+			<value xml:lang="ko"><![CDATA[한줄 이야기]]></value>
+		</item>
+		<item name="cafe_album">
+			<value xml:lang="ko"><![CDATA[동아리 앨범]]></value>
+		</item>
+		<item name="menu">
+			<value xml:lang="ko"><![CDATA[메뉴]]></value>
+		</item>
+		<item name="default_group1">
+			<value xml:lang="ko"><![CDATA[가입대기]]></value>
+		</item>
+		<item name="default_group2">
+			<value xml:lang="ko"><![CDATA[부원]]></value>
+		</item>
+	</item>
+	<item name="cmd_admin_menus" type="array">
+		<item name="dispClubAdminSiteManage">
+			<value xml:lang="ko"><![CDATA[동아리 카페 설정]]></value>
+		</item>
+		<item name="dispClubAdminSiteMemberGroupManage">
+			<value xml:lang="ko"><![CDATA[부원그룹관리]]></value>
+		</item>
+		<item name="dispClubAdminSiteMemberManage">
+			<value xml:lang="ko"><![CDATA[부원 목록]]></value>
+		</item>
+		<item name="dispClubAdminSiteTopMenu">
+			<value xml:lang="ko"><![CDATA[메뉴 관리]]></value>
+		</item>
+		<item name="dispClubAdminSiteComponent">
+			<value xml:lang="ko"><![CDATA[기능 설정]]></value>
+		</item>
+		<item name="dispClubAdminSiteCounter">
+			<value xml:lang="ko"><![CDATA[접속 통계]]></value>
+		</item>
+		<item name="dispClubAdminSiteMidSetup">
+			<value xml:lang="ko"><![CDATA[모듈 세부 설정]]></value>
+		</item>
+	</item>
+	<item name="cmd_cafe_registration">
+		<value xml:lang="ko"><![CDATA[동아리 생성]]></value>
+	</item>
+	<item name="cmd_cafe_setup">
+		<value xml:lang="ko"><![CDATA[동아리 카페 설정]]></value>
+	</item>
+	<item name="cmd_cafe_hub">
+		<value xml:lang="ko"><![CDATA[동아리 허브]]></value>
+	</item>
+	<item name="cmd_cafe_basic_setup">
+		<value xml:lang="ko"><![CDATA[동아리 카페 기본 설정]]></value>
+	</item>
+	<item name="cmd_cafe_delete">
+		<value xml:lang="ko"><![CDATA[동아리 해산]]></value>
+	</item>
+	<item name="cmd_go_home">
+		<value xml:lang="ko"><![CDATA[홈으로 이동]]></value>
+	</item>
+	<item name="cmd_go_cafe_admin">
+		<value xml:lang="ko"><![CDATA[동아리 전체 관리]]></value>
+	</item>
+	<item name="cmd_change_layout">
+		<value xml:lang="ko"><![CDATA[변경]]></value>
+	</item>
+	<item name="cmd_select_index">
+		<value xml:lang="ko"><![CDATA[초기화면 선택]]></value>
+	</item>
+	<item name="cmd_add_new_menu">
+		<value xml:lang="ko"><![CDATA[새로운 메뉴 추가]]></value>
+	</item>
+	<item name="default_language">
+		<value xml:lang="ko"><![CDATA[기본 언어]]></value>
+	</item>
+	<item name="about_default_language">
+		<value xml:lang="ko"><![CDATA[처음 접속하는 사용자의 언어 설정을 지정할 수 있습니다.]]></value>
+	</item>
+	<item name="about_cafe_act" type="array">
+		<item name="dispClubAdminSiteManage">
+			<value xml:lang="ko"><![CDATA[동아리 카페의 모양을 꾸밀 수 있습니다]]></value>
+		</item>
+		<item name="dispClubAdminSiteMemberGroupManage">
+			<value xml:lang="ko"><![CDATA[동아리 내에서 사용되는 그룹 관리를 할 수 있습니다]]></value>
+		</item>
+		<item name="dispClubAdminSiteMemberManage">
+			<value xml:lang="ko"><![CDATA[동아리에 등록된 부원들을 보거나 관리할 수 있습니다]]></value>
+		</item>
+		<item name="dispClubAdminSiteTopMenu">
+			<value xml:lang="ko"><![CDATA[동아리 카페의 상단이나 좌측등에 나타나는 일반적인 메뉴를 수정하거나 추가할 수 있습니다]]></value>
+		</item>
+		<item name="dispClubAdminSiteComponent">
+			<value xml:lang="ko"><![CDATA[에디터 컴포넌트/ 애드온을 활성화 하거나 설정을 변경할 수 있습니다]]></value>
+		</item>
+		<item name="dispClubAdminSiteCounter">
+			<value xml:lang="ko"><![CDATA[동아리 카페의 접속 현황을 볼 수 있습니다]]></value>
+		</item>
+		<item name="dispClubAdminSiteMidSetup">
+			<value xml:lang="ko"><![CDATA[동아리 카페에서 사용하는 게시판, 페이지등의 모듈 세부 설정을 할 수 있습니다]]></value>
+		</item>
+	</item>
+	<item name="about_cafe">
+		<value xml:lang="ko"><![CDATA[동아리 서비스 관리자는 다수의 동아리를 만들 수 있고 또 각 동아리를 편하게 설정할 수 있도록 합니다.]]></value>
+	</item>
+	<item name="about_cafe_title">
+		<value xml:lang="ko"><![CDATA[동아리 이름은 관리를 위해서만 사용될 뿐 서비스에는 나타나지 않습니다]]></value>
+	</item>
+	<item name="about_menu_names">
+		<value xml:lang="ko"><![CDATA[동아리 카페에 나타날 메뉴 이름을 언어에 따라서 지정할 수 있습니다.<br/>하나만 입력하셔도 모두 같이 적용됩니다]]></value>	</item>
+	<item name="about_menu_option">
+		<value xml:lang="ko"><![CDATA[이 기능은 메뉴를 출력해주는 레이아웃이나 위젯에서 제공해주어야 동작합니다.]]></value>
+	</item>
+	<item name="about_group_grant">
+		<value xml:lang="ko"><![CDATA[그룹을 선택하면 선택된 그룹만 메뉴가 보입니다.<br/>모두 해제하면 비회원도 볼 수 있습니다]]></value>
+	</item>
+	<item name="about_module_type">
+		<value xml:lang="ko"><![CDATA[게시판,페이지는 모듈을 생성하고 URL은 링크만 합니다.<br/>생성후 수정할 수 없습니다]]></value>	</item>
+	<item name="about_browser_title">
+		<value xml:lang="ko"><![CDATA[메뉴에 접속시 브라우저의 제목으로 나타날 내용입니다]]></value>
+	</item>
+	<item name="about_module_id">
+		<value xml:lang="ko"><![CDATA[게시판,페이지등 접속할때 사용될 주소입니다.<br/>예) http://도메인/[모듈ID], http://도메인/?mid=[모듈ID]]]></value>
+	</item>
+	<item name="about_menu_item_url">
+		<value xml:lang="ko"><![CDATA[대상을 URL로 할때 연결할 링크주소입니다.<br/>http://는 빼고 입력해주세요]]></value>
+	</item>
+	<item name="about_menu_image_button">
+		<value xml:lang="ko"><![CDATA[메뉴명 대신 이미지로 메뉴를 사용할 수 있습니다.]]></value>
+	</item>
+	<item name="about_cafe_delete">
+		<value xml:lang="ko"><![CDATA[동아리를 해산하게 되면 연결되어 있는 모든 모듈(게시판,페이지등)과 그에 따른 글들이 삭제됩니다.<br />주의가 필요합니다]]></value>
+	</item>
+	<item name="about_cafe_admin">
+		<value xml:lang="ko"><![CDATA[를 입력후 추가 버튼을 누른뒤 저장하세요. 동아리 회장을 등록할 수 있습니다.<br/>동아리 관리자 콘솔은 http://주소/?act=dispClubAdminSiteManage 로 관리자 페이지로 접속할 수 있으며 존재하지 않는 사용자는 관리자로 등록되지 않습니다]]></value>
+	</item>
+	<item name="confirm_change_layout">
+		<value xml:lang="ko"><![CDATA[레이아웃을 변경할 경우 레이아웃 정보들 중 일부가 사라질 수가 있습니다. 변경하시겠습니까?]]></value>
+	</item>
+	<item name="confirm_delete_menu_item">
+		<value xml:lang="ko"><![CDATA[메뉴 항목 삭제시 연결되어 있는 게시판이나 페이지 모듈도 같이 삭제가 됩니다. 그래도 삭제하시겠습니까?]]></value>
+	</item>
+	<item name="msg_default_mid_cannot_delete">
+		<value xml:lang="ko"><![CDATA[초기화면으로 설정된 메뉴는 삭제하실 수 없습니다. 동아리 카페 설정에서 초기화면을 변경후 삭제하세요]]></value>
+	</item>
+	<item name="msg_module_count_exceed">
+		<value xml:lang="ko"><![CDATA[허용된 모듈의 개수를 초과하였기에 생성할 수 없습니다]]></value>
+	</item>
+	<item name="msg_not_enabled_id">
+		<value xml:lang="ko"><![CDATA[사용할 수 없는 아이디입니다]]></value>
+	</item>
+	<item name="msg_same_site">
+		<value xml:lang="ko"><![CDATA[동일한 가상 사이트의 모듈은 이동할 수가 없습니다]]></value>
+	</item>
+	<item name="about_move_module">
+		<value xml:lang="ko"><![CDATA[가상사이트와 기본사이트간의 모듈을 옮길 수 있습니다.<br/>다만 가상사이트끼리 모듈을 이동하거나 같은 이름의 mid가 있을 경우 예기치 않은 오류가 생길 수 있으니 꼭 가상 사이트와 기본 사이트간의 다른 이름을 가지는 모듈만 이동하세요]]></value>
+	</item>
+	<item name="msg_greeting">
+		<value xml:lang="ko"><![CDATA[<strong>%s</strong>님 안녕하세요.]]></value>
+	</item>
+	<item name="newest_comment">
+		<value xml:lang="ko"><![CDATA[최근 댓글]]></value>
+	</item>
+	<item name="addon_name">
+		<value xml:lang="ko"><![CDATA[애드온명]]></value>
+	</item>
+	<item name="config_top_menu">
+		<value xml:lang="ko"><![CDATA[상단메뉴 설정]]></value>
+	</item>
+	<item name="about_config_top_menu">
+		<value xml:lang="ko"><![CDATA[상단메뉴(top_menu)를 선택합니다. 사용하는 레이아웃에서 상단메뉴 출력을 지원해야 합니다.]]></value>
+	</item>
+	<item name="msg_not_export_index_module">
+		<value xml:lang="ko"><![CDATA[동아리 카페의 초기화면 모듈은 내보낼 수 없습니다.]]></value>
+	</item>
+</lang>

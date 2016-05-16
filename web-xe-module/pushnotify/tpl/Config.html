@@ -1,0 +1,161 @@
+<load target="js/ncenter_admin.js" />
+<load target="css/ncenter_admin.css" />
+<include target="header.html" />
+
+<form ruleset="insertConfig" action="./" method="post" class="x_form-horizontal" id="fo_pushnotify">
+	<input type="hidden" name="module" value="pushnotify" />
+	<input type="hidden" name="act" value="procPushnotifyAdminInsertConfig" />
+
+	<section class="section collapsed">
+		<h1>기본 기능 설정 (클릭하시면 기능설정을 할 수 있습니다.)</h1>
+		<div class="x_control-group">
+			<label class="x_control-label"><span class="x_label x_label-important">주의!</span>알림센터 동작여부</label>
+			<div class="x_controls">
+				<label class="x_inline">
+					<input type="radio" id="use_y" name="use" value="Y" checked="checked"|cond="$config->use == 'Y'" /> 동작
+				</label>
+				<label class="x_inline">
+					<input type="radio" id="use_n" name="use" value="N" checked="checked"|cond="$config->use == 'N'" /> 동작 안 함
+				</label>
+				<p class="x_help-block"><span class="x_label x_label-important">주의!</span>알림센터의 모든 기능을 중지 시킬 수 있습니다.</p>
+			</div>
+		</div>
+		<div class="x_control-group">
+			<label class="x_control-label">Application ID</label>
+			<div class="x_controls">
+				<input type="text" name="app_id" value="{$config->app_id}" />
+				<p class="x_help-block">Application ID 입니다.</p>
+			</div>
+		</div>
+		<div class="x_control-group">
+			<label class="x_control-label">REST API Key</label>
+			<div class="x_controls">
+				<input type="text" name="rest_key" value="{$config->rest_key}" />
+				<p class="x_help-block">REST API Key 입니다.</p>
+			</div>
+		</div>
+		<div class="x_control-group">
+			<label class="x_control-label">익명 알림에서 익명 이름 설정</label>
+			<div class="x_controls">
+				<input type="text" name="anonymous_name" value="{$config->anonymous_name}" />
+				<p class="x_help-block">익명 게시판 등에서 알림이 등록될 시, Anonymous 등 익명을 표시할 이름을 설정할 수 있습니다. 기본은 Anonymous 입니다.</p>
+			</div>
+		</div>
+		<div class="x_control-group">
+			<label class="x_control-label">멘션 설정</label>
+			<div class="x_controls mention_option">
+				<label class="x_inline">
+					<input type="checkbox" name="mention_format[]" value="respect" data-mention-split="님" checked="checked"|cond="in_array('respect', $config->mention_format)" /> '님'을 붙여 쓸 수 있도록 허용
+				</label>
+				<ul class="preview">
+					<li data-mention-default="enable"><strong>@스님</strong></li>
+					<li data-mention-default="enable"><strong>@선생님이다</strong></li>
+					<li data-mention-default="enable"><strong>@NAME</strong>&nbsp;&nbsp;…</li>
+					<li data-mention-default="enable"><strong>@NAME</strong>&nbsp;&nbsp;님</li>
+					<li><strong>@NAME</strong>님</li>
+					<li><strong>@NAME</strong>님과</li>
+					<li><strong>@NAME1</strong>님,&nbsp;&nbsp;<strong>@NAME2</strong>님이&nbsp;&nbsp;…</li>
+				</ul>
+				<p class="x_help-block">녹색으로 표시된 예시처럼 사용할 수 있습니다.</p>
+			</div>
+		</div>
+		<div class="x_control-group">
+			<label class="x_control-label">맨션 타겟 설정</label>
+			<div class="x_controls">
+				<label class="x_inline">
+					<input type="radio" id="mention_names_id" name="mention_names" value="id" checked="checked"|cond="$config->mention_names == 'id'" /> 아이디
+				</label>
+				<label class="x_inline">
+					<input type="radio" id="mention_names_nick_name" name="mention_names" value="nick_name" checked="checked"|cond="$config->mention_names == 'nick_name'" /> 닉네임
+				</label>
+				<p class="x_help-block">알림센터에서 닉네임 혹은 아이디 선택하여 맨션설정을 할 수 있습니다.</p>
+			</div>
+		</div>
+
+		<div class="x_control-group">
+			<label class="x_control-label">쪽지 알림 설정</label>
+			<div class="x_controls">
+				<label><input type="checkbox" name="message_notify" value="N" checked="checked"|cond="$config->message_notify == 'N'" /> 쪽지 알림을 사용하지 않음(XE의 기본 쪽지 알림을 사용)</label>
+			</div>
+		</div>
+
+		<div class="x_control-group">
+			<label class="x_control-label">게시글 알림 사용게시판</label>
+			<div class="x_controls">
+				<p class="x_help-block">선택한 게시판에서는 게시글 등록시 전체 회원들에게 알려줍니다.</p>
+				<div loop="$mid_list => $mid, $item">
+					<label>
+						<input type="checkbox" value="{$item->module_srl}" name="admin_notice_doc_module_srls[]" checked="checked"|cond="in_array($item->module_srl, $config->admin_notice_doc_module_srls)" />
+						<strong>{$item->browser_title}</strong> ({$item->mid} / {strtoupper($item->module)})
+					</label>
+				</div>
+			</div>
+		</div>
+		<div class="x_control-group">
+			<label class="x_control-label">댓글 알림 사용게시판</label>
+			<div class="x_controls">
+				<p class="x_help-block">선택한 게시판에서는 댓글의 모든 알림을 관리자가 받을 수 있습니다.</p>
+				<div loop="$mid_list => $mid, $item">
+					<label>
+						<input type="checkbox" value="{$item->module_srl}" name="admin_comment_module_srls[]" checked="checked"|cond="in_array($item->module_srl, $config->admin_comment_module_srls)" />
+						<strong>{$item->browser_title}</strong> ({$item->mid} / {strtoupper($item->module)})
+					</label>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="section collapsed">
+		<h1>새 글 알림 및 문서알림 (클릭하시면 기능설정을 할 수 있습니다.) </h1>
+		<div class="x_control-group">
+			<label class="x_control-label">글 추천 알림.</label>
+			<div class="x_controls">
+				<label class="x_inline"><input type="radio" name="voted_format" value="Y" checked="checked"|cond="$config->voted_format == 'Y'" /> 사용함</label>
+				<label class="x_inline"><input type="radio" name="voted_format" value="N" checked="checked"|cond="$config->voted_format == 'N'" /> 사용하지 않음</label>
+				<p>글이 추천받았을때 추천알림을 받을 수 있습니다.</p>
+			</div>
+		</div>
+		<div class="x_control-group">
+			<label class="x_control-label">게시판 읽을경우 관련알림 삭제</label>
+			<div class="x_controls">
+				<label class="x_inline"><input type="radio" name="document_read" value="N" checked="checked"|cond="$config->document_read == 'N'" />알림을 지우지 않음</label>
+				<label class="x_inline"><input type="radio" name="document_read" value="Y" checked="checked"|cond="$config->document_read == 'Y'" />알림을 지움</label>
+				<p>게시판을 읽을경우 해당 글의 포함된 모든 알림내역을 알림내역에서 삭제 합니다. 기본값은 N입니다.</p>
+			</div>
+		</div>
+		<div class="x_control-group">
+			<label class="x_control-label">댓글 알림 설정</label>
+			<div class="x_controls">
+				<label class="x_inline"><input type="radio" name="document_notify" value="all-comment" checked="checked"|cond="$config->document_notify == 'all-comment'" /> 글쓴이에게 모든 댓글 알림</label>
+				<label class="x_inline"><input type="radio" name="document_notify" value="direct-comment" checked="checked"|cond="$config->document_notify == 'direct-comment'" /> 대댓글은 알리지 않음</label>
+			</div>
+		</div>
+	</section>
+
+	<div class="x_clearfix btnArea">
+		<div class="x_pull-right">
+			<button class="x_btn x_btn-primary" type="submit">{$lang->cmd_registration}</button>
+		</div>
+	</div>
+
+	<section class="section">
+		<h1>기타</h1>
+		<div class="x_control-group">
+			<label class="x_control-label">시험용 스킨 알림 생성</label>
+			<div class="x_controls">
+				<label><input type="button" name="dummy" onClick="doDummyDataInsert();" class="x_btn" value="더미 데이터 생성"> 스킨 및 모듈 테스트를 위한 시험용 알림 생성</label>
+			</div>
+		</div>
+
+		<div class="x_control-group">
+			<label class="x_control-label">시험용 푸시 알림 생성</label>
+			<div class="x_controls">
+				<label><input type="button" name="dummy" onClick="doDummyPushDataInsert();" class="x_btn" value="더미 데이터 생성"> 모듈 및 모바일 테스트를 위한 시험용 알림 생성</label>
+			</div>
+		</div>
+	</section>
+</form>
+<div cond="$_pushnotify_iframe_url">
+	<p>설치된 알림센터 버전 : Lite v{$pushnotify_module_info->version}</p>
+	<iframe frameborder="0" src="{$_pushnotify_iframe_url}" style="display:block; margin:10px auto; padding:0; width:90%;border:3px solid #7361d6; border-radius:10px; height:200px; overflow:scroll; "></iframe>
+</div>

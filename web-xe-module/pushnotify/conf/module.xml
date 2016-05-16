@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<module>
+	<grants />
+	<permissions />
+	<actions>
+		<action name="dispPushnotifyAdminConfig" type="view" admin_index="true" menu_name="pushnotify" menu_index="true" />
+		<action name="dispPushnotifyAdminAlert" type="view" />
+		<action name="dispPushnotifyAdminList" type="view" />
+		<action name="procPushnotifyAdminInsertConfig" type="controller" ruleset="insertConfig" />
+		<action name="procPushnotifyAdminDeleteNofity" type="controller" />
+		<action name="procPushnotifyAdminInsertDummyData" type="controller" />
+		<action name="procPushnotifyAdminInsertPushData" type="controller" />
+		<action name="procPushnotifyAdminAlert" type="controller" />
+		<action name="procPushnotifyNotifyRead" type="controller" />
+		<action name="procPushnotifyNotifyReadAll" type="controller" />
+		<action name="procPushnotifyRedirect" type="controller" />
+	</actions>
+	<menus>
+		<menu name="pushnotify" type="all">
+			<title xml:lang="ko">푸시 알림</title>
+			<title xml:lang="en">Push Notify</title>
+		</menu>
+	</menus>
+</module>

@@ -1,0 +1,12 @@
+<filter name="delete_club" module="club" act="procClubAdminDeleteClub" confirm_msg_code="confirm_delete">
+    <form>
+        <node target="site_srl" required="true" maxlength="250" />
+    </form>
+    <parameter>
+        <param name="site_srl" target="site_srl" />
+    </parameter>
+    <response callback_func="completeDeleteClub">
+        <tag name="error" />
+        <tag name="message" />
+    </response>
+</filter>

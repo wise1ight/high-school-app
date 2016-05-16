@@ -1,0 +1,19 @@
+<load target="./js/club.js" />
+<load target="./filter/delete_club.xml" />
+<include target="./header.html" />
+<form action="./" method="post" onsubmit="return procFilter(this, delete_club)" id="fo_club" class="section">
+	<input type="hidden" name="site_srl" value="{$club_info->site_srl}" />
+    <h1>{$lang->cmd_cafe_delete}</h1>
+    <p>{$lang->about_cafe_delete}</p>
+	<dl class="x_dl-horizontal">
+		<dt>{$lang->cafe_title}</dt>
+		<dd>{$club_info->title}&nbsp;</dd>
+		<dt>{$lang->domain}</dt>
+		<dd>{$club_info->domain}&nbsp;</dd>
+		<dt>{$lang->cafe_admin}</dt>
+		<dd loop="$admin_list => $key,$val">{$val->nick_name}({$val->user_id})</dd>
+	</dl>
+	<div class="btnArea">
+		<input type="submit" value="{$lang->cmd_delete}" class="x_btn x_btn-danger" />
+	</div>
+</form>

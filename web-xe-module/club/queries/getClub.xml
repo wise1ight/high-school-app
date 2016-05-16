@@ -1,0 +1,11 @@
+<query id="getClub" action="select">
+    <tables>
+        <table name="clubs" />
+    </tables>
+    <columns>
+        <column name="*" />
+    </columns>
+    <conditions>
+        <condition operation="equal" column="site_srl" var="site_srl" filter="number" notnull="notnull" />
+    </conditions>
+</query>

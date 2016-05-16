@@ -1,0 +1,15 @@
+<div class="x_page-header">
+	<h1>XE 알림센터 Lite</h1>
+</div>
+
+<div class="header4">
+	<ul class="x_nav x_nav-tabs">
+		<li class="x_active"|cond="$act=='dispPushnotifyAdminConfig'"><a href="{getUrl('act','dispPushnotifyAdminConfig')}">환경설정</a></li>
+		<li class="x_active"|cond="$act=='dispPushnotifyAdminAlert'"><a href="{getUrl('act','dispPushnotifyAdminAlert')}">긴급알림</a></li>
+		<li class="x_active"|cond="$act=='dispPushnotifyAdminList'"><a href="{getUrl('act','dispPushnotifyAdminList')}">알림목록</a></li>
+	</ul>
+</div>
+
+<div cond="$XE_VALIDATOR_MESSAGE" class="message {$XE_VALIDATOR_MESSAGE_TYPE}">
+	<p>{$XE_VALIDATOR_MESSAGE}</p>
+</div>

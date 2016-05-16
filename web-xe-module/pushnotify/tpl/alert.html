@@ -1,0 +1,20 @@
+<load target="css/ncenter_admin.css" />
+<include target="header.html" />
+
+<section class="section">
+	<h1>긴급 알림</h1>
+
+	<div class="x_control-group">
+			<label class="x_control-label">내용</label>
+			<div class="x_controls">
+				<input type="text" name="alert_contents" value="{$config->alert_contents}" />
+				<p class="x_help-block">익명 게시판 등에서 알림이 등록될 시, Anonymous 등 익명을 표시할 이름을 설정할 수 있습니다. 기본은 Anonymous 입니다.</p>
+			</div>
+		</div>
+		
+	<div class="x_clearfix btnArea">
+		<div class="x_pull-right">
+			<button class="x_btn x_btn-primary" type="submit">전송</button>
+		</div>
+	</div>
+</section>

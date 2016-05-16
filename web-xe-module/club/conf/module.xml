@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<module>
+    <grants />
+    <permissions>
+        <permission action="dispClubAdminSiteManage" target="manager" />
+        <permission action="dispClubAdminSiteMemberGroupManage" target="manager" />
+        <permission action="dispClubAdminSiteMemberManage" target="manager" />
+        <permission action="dispClubAdminSiteTopMenu" target="manager" />
+        <permission action="dispClubAdminSiteComponent" target="manager" />
+        <permission action="dispClubAdminSiteCounter" target="manager" />
+        <permission action="dispClubAdminSiteMidSetup" target="manager" />
+
+        <permission action="dispClubCreate" target="member" />
+        
+		<permission action="getClubMenuTplInfo" target="manager" />
+
+        <permission action="procClubCafeCreation" target="member" />
+        <permission action="procClubChangeLayout" target="manager" />
+        <permission action="procClubInsertMenuItem" target="manager" />
+        <permission action="procClubDeleteMenuItem" target="manager" />
+        <permission action="procClubMenuItemMove" target="manager" />
+        <permission action="procClubDeleteButton" target="manager" />
+        <permission action="procClubDeleteGroup" target="manager" />
+        <permission action="procClubInsertGroup" target="manager" />
+        <permission action="procClubUpdateMemberGroup" target="manager" />
+        <permission action="procClubDeleteMember" target="manager" />
+        <permission action="procClubUpdateBoardSkin" target="manager" />
+        <permission action="procClubUpdateSiteConfig" target="manager" />
+        <permission action="procClubUpdateLayoutConfig" target="manager" />
+    </permissions>
+    <actions>
+        <action name="dispClubIndex" type="view" index="true" />
+        <action name="dispClubManage" type="view" />
+        <action name="dispClubCreate" type="view" />
+
+        <action name="dispClubAdminSiteManage" type="view" />
+        <action name="dispClubAdminSiteMemberGroupManage" type="view" />
+        <action name="dispClubAdminSiteMemberManage" type="view" />
+        <action name="dispClubAdminSiteTopMenu" type="view" />
+        <action name="dispClubAdminSiteComponent" type="view" />
+        <action name="dispClubAdminSiteCounter" type="view" />
+        <action name="dispClubAdminSiteMidSetup" type="view" />
+        <action name="dispClubIS" type="view" />
+
+        <action name="getClubMenuItem" type="model" />
+        <action name="getClubMenuTplInfo" type="model" />
+
+        <action name="procClubCafeCreation" type="controller" ruleset="cafeCreation" />
+        <action name="procClubChangeLayout" type="controller" />
+        <action name="procClubInsertMenuItem" type="controller" ruleset="insertMenuItem" />
+        <action name="procClubDeleteMenuItem" type="controller" />
+        <action name="procClubMenuItemMove" type="controller" />
+        <action name="procClubDeleteButton" type="controller" />
+        <action name="procClubDeleteGroup" type="controller" />
+        <action name="procClubInsertGroup" type="controller" />
+        <action name="procClubDeleteMember" type="controller" />
+        <action name="procClubUpdateMemberGroup" type="controller" />
+        <action name="procClubUpdateSiteConfig" type="controller" ruleset="updateSiteConfig" />
+        <action name="procClubUpdateLayoutConfig" type="controller" ruleset="updateLayout" />
+
+        <action name="dispClubAdminContent" type="view" admin_index="true" menu_name="cafexe" menu_index="true" />
+        <action name="dispClubAdminInsert" type="view" />
+        <action name="dispClubAdminManage" type="view" />
+        <action name="dispClubAdminSetup" type="view" />
+        <action name="dispClubAdminSkinSetup" type="view" />
+        <action name="dispClubAdminMobileSkinSetup" type="view" />
+        <action name="dispClubAdminDelete" type="view" />
+
+        <action name="procClubAdminInsertConfig" type="controller" />
+        <action name="procClubAdminInsertClub" type="controller" ruleset="insertClub" />
+        <action name="procClubAdminUpdateClub" type="controller" />
+        <action name="procClubAdminDeleteClub" type="controller" />
+        <action name="procClubAdminImportModule" type="controller" />
+        <action name="procClubAdminExportModule" type="controller" />
+
+		<!-- for mobile skins - 2012.05.31-->
+		<action name="dispClubMyCafe" type="view" />
+		<action name="dispClubNewestDoc" type="view" />
+		<action name="dispMobileCafeSite" type="view" />
+		<action name="dispSiteCafeItems" type="view" />
+		<action name="dispCafeSiteInfo" type="view" />
+		<action name="dispClubDocs" type="view" />
+
+    </actions>
+	<menus>
+		<menu name="cafexe" type="all">
+			<title xml:lang="ko">동아리</title>
+		</menu>
+	</menus>
+</module>

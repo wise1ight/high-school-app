@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module version="0.2">
+    <title xml:lang="ko">동아리</title>
+    <description xml:lang="ko">동아리를 관리하고 각 동아리의 카페를 생성합니다.</description>
+    <version>1.0</version>
+    <date>2014-11-09</date>
+    <category>package</category>
+
+    <author email_address="kuvh@live.co.kr" link="http://xpressengine.com/">
+    <name xml:lang="ko">KUvH</name>
+    </author>
+</module>

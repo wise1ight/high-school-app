@@ -1,0 +1,4 @@
+<filter name="export_module" module="club" act="procClubAdminExportModule">
+    <form />
+    <response />
+</filter>

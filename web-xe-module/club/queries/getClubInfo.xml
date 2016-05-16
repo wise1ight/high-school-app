@@ -1,0 +1,20 @@
+<query id="getClubInfo" action="select">
+    <tables>
+        <table name="clubs" />
+        <table name="sites" />
+        <table name="modules" />
+    </tables>
+    <columns>
+        <column name="clubs.*" />
+        <column name="clubs.layout_srl" alias="cafe_layout_srl"/>
+        <column name="clubs.mlayout_srl" alias="cafe_mlayout_srl"/>
+        <column name="clubs.description" alias="cafe_description"/>
+        <column name="sites.domain" alias="domain" />
+        <column name="modules.*" />
+    </columns>
+    <conditions>
+        <condition operation="equal" column="clubs.site_srl" var="site_srl" filter="number" notnull="notnull" />
+        <condition operation="equal" column="sites.site_srl" default="clubs.site_srl" filter="number" notnull="notnull" pipe="and" />
+        <condition operation="equal" column="modules.module_srl" default="sites.index_module_srl" pipe="and" />
+    </conditions>
+</query>

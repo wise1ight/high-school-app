@@ -1,0 +1,28 @@
+<query id="getClubList" action="select">
+    <tables>
+        <table name="clubs" />
+        <table name="sites" />
+        <table name="modules" />
+    </tables>
+    <columns>
+        <column name="clubs.site_srl" alias="site_srl" />
+        <column name="clubs.title" alias="cafe_title" />
+        <column name="clubs.description" alias="cafe_description" />
+        <column name="sites.domain" alias="domain" />
+        <column name="modules.*" />
+    </columns>
+    <conditions>
+        <condition operation="equal" column="sites.site_srl" default="clubs.site_srl" filter="number" notnull="notnull" />
+        <condition operation="equal" column="modules.module_srl" default="sites.index_module_srl" pipe="and" />
+		<group pipe="and">
+			<condition operation="like" column="clubs.title" var="s_title" />
+			<condition operation="like" column="sites.domain" var="s_domain" pipe="or" />
+		</group>
+    </conditions>
+    <navigation>
+        <index var="sort_index" default="clubs.list_order" order="asc" />
+        <list_count var="list_count" default="20" />
+        <page_count var="page_count" default="10" />
+        <page var="page" default="1" />
+    </navigation>
+</query>

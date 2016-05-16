@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module version="0.2">
+	<title xml:lang="ko">푸시 알림</title>
+	<description xml:lang="ko">어플리케이션에 푸시알림을 전송합니다.</description>
+	<version>1.0</version>
+	<date>2014-12-26</date>
+	<category>content</category>
+	<author link="http://www.gjjungang.hs.kr">
+		<name xml:lang="ko">KUvH</name>
+	</author>
+</module>

@@ -1,0 +1,11 @@
+<filter name="update_club" module="club" act="procClubAdminUpdateClub" confirm_msg_code="confirm_submit">
+    <form>
+        <node target="site_srl" required="true" maxlength="250" />
+    </form>
+    <parameter />
+    <response callback_func="completeUpdateClub">
+        <tag name="error" />
+        <tag name="message" />
+        <tag name="site_srl" />
+    </response>
+</filter>
